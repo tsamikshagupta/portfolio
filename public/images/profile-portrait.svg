@@ -1,0 +1,18 @@
+<svg width="900" height="1100" viewBox="0 0 900 1100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="130" y1="60" x2="760" y2="1020" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#768064"/>
+      <stop offset="1" stop-color="#2C3424"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="730" y1="140" x2="310" y2="920" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DADED8" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#DADED8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1100" rx="46" fill="url(#bg)"/>
+  <circle cx="452" cy="414" r="172" fill="#DADED8" fill-opacity="0.2"/>
+  <path d="M450 310C379 310 322 369 322 441V630H578V441C578 369 521 310 450 310Z" fill="#DADED8" fill-opacity="0.62"/>
+  <rect x="280" y="670" width="340" height="220" rx="54" fill="#DADED8" fill-opacity="0.24"/>
+  <rect x="118" y="96" width="664" height="908" rx="34" stroke="url(#shine)" stroke-width="2"/>
+  <text x="120" y="980" fill="#DADED8" font-size="42" font-family="serif" opacity="0.85">Samiksha Terala</text>
+</svg>

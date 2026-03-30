@@ -1,0 +1,8 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" fill="#2C3424"/>
+  <rect x="50" y="50" width="1100" height="620" rx="20" stroke="#768064" stroke-opacity="0.4"/>
+  <path d="M180 550C350 370 460 370 620 510C760 630 900 620 1030 420" stroke="#DADED8" stroke-width="2" stroke-linecap="round" stroke-dasharray="8 10"/>
+  <circle cx="620" cy="360" r="140" fill="#4C583E" fill-opacity="0.45"/>
+  <text x="120" y="170" fill="#DADED8" font-size="72" font-family="serif">Court-MOE</text>
+  <text x="124" y="220" fill="#959581" font-size="20" font-family="monospace">Legal NLP • Mixture-of-Experts • 970K embeddings</text>
+</svg>

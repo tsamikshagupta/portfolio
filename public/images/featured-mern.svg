@@ -1,0 +1,9 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" fill="#1A1F14"/>
+  <rect x="90" y="90" width="1020" height="540" rx="24" fill="#2C3424"/>
+  <rect x="170" y="180" width="250" height="360" rx="16" fill="#4C583E"/>
+  <rect x="460" y="180" width="250" height="360" rx="16" fill="#768064" fill-opacity="0.6"/>
+  <rect x="750" y="180" width="250" height="360" rx="16" fill="#959581" fill-opacity="0.4"/>
+  <text x="150" y="155" fill="#DADED8" font-size="64" font-family="serif">MERN Production Apps</text>
+  <text x="154" y="595" fill="#DADED8" font-size="20" font-family="monospace">React • Express • MongoDB • 2000+ users</text>
+</svg>

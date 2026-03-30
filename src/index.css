@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Syne:wght@500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Soft Light Aesthetic Palette */
+    --background: 40 30% 98%;   /* #fbfaf8 Off-white/beige */
+    --foreground: 30 15% 20%;   /* #3a3530 Dark taupe/subtle brown */
+    
+    --card: 40 30% 96%;
+    --card-foreground: 30 15% 25%;
+    
+    --popover: 40 30% 98%;
+    --popover-foreground: 30 15% 15%;
+    
+    --primary: 345 30% 40%;     /* Soft burgundy */
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 30 20% 90%;    /* Soft grey/beige mix */
+    --secondary-foreground: 30 15% 30%;
+    
+    --muted: 30 20% 92%;
+    --muted-foreground: 30 15% 45%;
+    
+    --accent: 345 25% 45%;      /* Soft burgundy accent */
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 30 15% 85%;
+    --input: 30 15% 85%;
+    --ring: 30 15% 65%;
+    
+    --radius: 0.75rem;
+
+    /* Type tokens */
+    --mono: "IBM Plex Mono", "SF Mono", monospace;
+    --display: "Syne", "Playfair Display", serif;
+    --body: "Manrope", "system-ui", sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    cursor: none; /* Hide default cursor for context-aware one */
+  }
+  
+  html {
+    scroll-behavior: auto; /* Handled by Lenis */
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased overflow-x-hidden;
+    background: linear-gradient(135deg, hsl(35 40% 98%), hsl(15 30% 96%), hsl(220 20% 97%));
+    min-height: 100vh;
+  }
+}
+
+/* --- CINEMATIC GRAIN & DEPTH --- */
+.noise-overlay {
+  position: fixed;
+  inset: -50%;
+  z-index: 9999;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.045;
+  mix-blend-mode: soft-light;
+  will-change: transform;
+  animation: grainShift 8s steps(10) infinite;
+}
+
+@keyframes grainShift {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-5%, -10%); }
+  20% { transform: translate(-15%, 5%); }
+  30% { transform: translate(7%, -25%); }
+  40% { transform: translate(-5%, 25%); }
+  50% { transform: translate(-15%, 10%); }
+  60% { transform: translate(15%, 0%); }
+  70% { transform: translate(0%, 15%); }
+  80% { transform: translate(3%, 35%); }
+  90% { transform: translate(-10%, 10%); }
+}
+
+/* Custom Scrollbar override while Lenis active */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(30 15% 85%);
+  border-radius: 10px;
+}
+
+/* Utilities for masking reveals */
+.mask-clip {
+  clip-path: inset(100% 0 0 0);
+  transition: clip-path 1.2s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.mask-clip.is-revealed {
+  clip-path: inset(0 0 0 0);
+}
+
+/* Glassmorphism primitives */
+.glass {
+  background: rgba(251, 250, 248, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
