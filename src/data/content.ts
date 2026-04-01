@@ -74,7 +74,7 @@ export const skillGroups = [
   },
   {
     title: "Deep Learning Optimization",
-    items: ["AMP", "SWA", "EMA", "MixUp", "Focal Loss", "Custom Embedding Pipelines", "GPU Training (A100)"]
+    items: ["AMP", "SWA", "EMA", "MixUp", "Focal Loss", "Custom Embedding Pipelines", "Production-Scale Model Training (NVIDIA DGX)"]
   },
   {
     title: "Backend & Full Stack",
@@ -100,7 +100,7 @@ export const projects: Project[] = [
       "Legal judgments across Indian courts carry domain-specific language with high class diversity. Manual routing collapses at scale.",
     approach:
       "Built a Mixture-of-Experts pipeline on 970K LegalBERT embeddings with temperature-annealed routing and training stability techniques — AMP, SWA, EMA, MixUp, Focal Loss.",
-    tech: ["PyTorch", "LegalBERT", "MoE", "AMP", "SWA", "A100 GPU"],
+    tech: ["PyTorch", "LegalBERT", "MoE", "AMP", "SWA", "Production-Scale Model Training (NVIDIA DGX)"],
     outcome:
       "61.4% multi-class routing accuracy on a 6.3GB corpus. Deployable batch and CLI inference. Stable training across minority court classes."
   },
