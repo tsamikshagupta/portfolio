@@ -18,7 +18,7 @@ export const navLinks = [
 ];
 
 export const heroContent = {
-  eyebrow: "ML Engineer · Systems Builder",
+  eyebrow: "ML ENGINEER · SYSTEMS BUILDER",
   name: "Samiksha\nGupta",
   headline: "Systems that hold up. Interfaces that ship.",
   summary:
@@ -65,28 +65,28 @@ export const aboutContent = {
 
 export const skillGroups = [
   {
-    title: "Languages",
-    items: ["Java", "Python", "C", "JavaScript", "SQL", "Kotlin", "Bash"]
+    title: "Programming Languages",
+    items: ["Java", "Python", "C", "SQL", "kotlin", "javascript"]
   },
   {
-    title: "Machine Learning & AI",
-    items: ["PyTorch", "Scikit-learn", "Transformers", "NLP", "Deep Learning", "Mixture-of-Experts", "Transfer Learning", "Fine-Tuning", "LLM Fine-Tuning", "Model Evaluation", "Hyperparameter Tuning"]
+    title: "AI / ML",
+    items: ["Machine Learning", "Deep Learning", 'LLM', "NLP", 'RAG', "Transformers", 'PyTorch', 'TensorFlow', 'Scikit-learn', 'Keras', 'Transfer Learning', 'Hyperparameter Tuning']
   },
   {
     title: "Deep Learning Optimization",
-    items: ["AMP", "SWA", "EMA", "MixUp", "Focal Loss", "Custom Embedding Pipelines", "GPU Training (A100)"]
+    items: ['AMP', 'SWA', 'EMA', 'MixUp', 'Focal Loss', 'Custom Embedding Pipelines', 'Production-Scale Model Training (NVIDIA DGX)']
   },
   {
-    title: "Backend & Full Stack",
-    items: ["MongoDB", "Express.js", "React", "Node.js (MERN)", "REST APIs", "JWT Authentication", "RBAC"]
+    title: "Backend and Full stack",
+    items: ['MongoDB', 'Express.js', 'React', 'Node.js', 'REST APIs', 'JWT Authentication', 'RBAC']
   },
   {
     title: "MLOps & Cloud",
-    items: ["FastAPI", "Flask", "Docker", "CI/CD (GitHub Actions)", "AWS (EC2, S3)", "Linux"]
+    items: ['Flask', 'Docker', 'CI/CD (GitHub Actions)', 'AWS (EC2, S3)', 'Linux']
   },
   {
-    title: "Tools",
-    items: ["Git", "Postman", "VS Code", "Google Colab", "Kaggle"]
+    title: "Tools & others",
+    items: ['Git', 'Postman', 'Kaggle', 'System Design', 'Data Structures and Algorithms']
   }
 ];
 
@@ -129,6 +129,19 @@ export const projects: Project[] = [
     tech: ["React", "Node.js", "MongoDB", "JWT", "RBAC", "AES-256"],
     outcome:
       "2,000+ active users. 20,000+ records. Secure encrypted deployment on VPS."
+  },
+  {
+    title: "Inventory Management System",
+    period: "",
+    role: "Developer",
+    image: "",
+    problem:
+      "Developed a web-based inventory management system for efficient tracking and management of resources in a college environment.",
+    approach:
+      "Built backend using Python and SQLite. Designed frontend using HTML, CSS, and JavaScript. Integrated dynamic UI interactions.",
+    tech: ["Python", "SQLite", "HTML", "CSS", "JavaScript"],
+    outcome:
+      "Enabled real-time inventory updates and user-friendly interface."
   }
 ];
 
@@ -203,9 +216,9 @@ export const philosophyContent = {
 };
 
 export const closingCta = {
-  title: "Let's build something that matters.",
+  title: "Let's connect and build something impactful.",
   copy:
-    "If you're hiring for roles that need systems depth, practical ML thinking, and full-stack ownership — I'd welcome the conversation."
+    "I am open to internships, collaborations, and AI-driven projects.\nLocation: Hyderabad, India"
 };
 
 export const contactLinks = [
