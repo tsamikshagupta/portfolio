@@ -74,19 +74,23 @@ export const skillGroups = [
   },
   {
     title: "Deep Learning Optimization",
-    items: ['AMP', 'SWA', 'EMA', 'MixUp', 'Focal Loss', 'Custom Embedding Pipelines', 'Production-Scale Model Training (NVIDIA DGX)']
+    items: ["AMP", "SWA", "EMA", "MixUp", "Focal Loss", "Custom Embedding Pipelines", "Production-Scale Model Training (NVIDIA DGX)"]
   },
   {
     title: "Backend and Full stack",
-    items: ['MongoDB', 'Express.js', 'React', 'Node.js', 'REST APIs', 'JWT Authentication', 'RBAC']
+    items: ["MongoDB", "Express.js", "React", "Node.js", "REST APIs", "JWT Authentication", "RBAC"]
   },
   {
     title: "MLOps & Cloud",
-    items: ['Flask', 'Docker', 'CI/CD (GitHub Actions)', 'AWS (EC2, S3)', 'Linux']
+    items: ["Flask", "Docker", "CI/CD (GitHub Actions)", "AWS (EC2, S3)", "Linux"]
   },
   {
     title: "Tools & others",
-    items: ['Git', 'Postman', 'Kaggle', 'System Design', 'Data Structures and Algorithms']
+    items: ["Git", "Postman", "Kaggle", "System Design", "Data Structures and Algorithms"]
+  },
+  {
+    title: "Core Computer Science Fundamentals",
+    items: ["Data Structures & Algorithms", "Operating Systems", "Computer Networks", "System Design", "Databases"]
   }
 ];
 
@@ -100,7 +104,7 @@ export const projects: Project[] = [
       "Legal judgments across Indian courts carry domain-specific language with high class diversity. Manual routing collapses at scale.",
     approach:
       "Built a Mixture-of-Experts pipeline on 970K LegalBERT embeddings with temperature-annealed routing and training stability techniques — AMP, SWA, EMA, MixUp, Focal Loss.",
-    tech: ["PyTorch", "LegalBERT", "MoE", "AMP", "SWA", "A100 GPU"],
+    tech: ["PyTorch", "LegalBERT", "MoE", "AMP", "SWA", "Production-Scale Model Training (NVIDIA DGX)"],
     outcome:
       "61.4% multi-class routing accuracy on a 6.3GB corpus. Deployable batch and CLI inference. Stable training across minority court classes."
   },
