@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint \"src/**/*.{ts,tsx}\""
   },
@@ -38,6 +38,6 @@
     "vite": "^6.4.1"
   },
   "engines": {
-    "node": ">=20.11.0"
+    "node": "20.x"
   }
 }
