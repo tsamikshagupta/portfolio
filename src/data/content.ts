@@ -86,7 +86,7 @@ export const skillGroups = [
   },
   {
     title: "Tools & others",
-    items: ["Git", "Postman", "Kaggle", "System Design", "Data Structures and Algorithms"]
+    items: ["Git", "Postman", "Kaggle", "HuggingFace Hub"]
   },
   {
     title: "Core Computer Science Fundamentals",
