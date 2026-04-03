@@ -88,6 +88,10 @@ export const skillGroups = [
     title: "Tools",
     items: ["Git", "Postman", "VS Code", "Google Colab", "Kaggle"]
   }
+  {
+    title: "Core Computer Science Fundamentals",
+    items: ["Data Structures & Algorithms", "Operating Systems", "Computer Networks", "System Design", "Databases"]
+  }
 ];
 
 export const projects: Project[] = [
