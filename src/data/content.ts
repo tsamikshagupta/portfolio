@@ -7,6 +7,7 @@ export type Project = {
   approach: string;
   tech: string[];
   outcome: string;
+  github?: string;
 };
 
 export const navLinks = [
@@ -99,7 +100,8 @@ export const projects: Project[] = [
     title: "Court-MOE",
     period: "Jul – Dec 2025",
     role: "Architect & ML Engineer",
-    image: "/images/project-court.png",
+    image: "/images/court_moe_landing.png",
+    github: "https://github.com/tsamikshagupta/LegalTech",
     problem:
       "Legal judgments across Indian courts carry domain-specific language with high class diversity. Manual routing collapses at scale.",
     approach:
@@ -109,23 +111,11 @@ export const projects: Project[] = [
       "61.4% multi-class routing accuracy on a 6.3GB corpus. Deployable batch and CLI inference. Stable training across minority court classes."
   },
   {
-    title: "TransPolymer",
-    period: "Feb – Jun 2025",
-    role: "ML Engineer",
-    image: "/images/project-polymer.png",
-    problem:
-      "Polymer property prediction was fragmented — tokenization, modeling, and serving lived in separate silos.",
-    approach:
-      "Designed the full pipeline from scratch: custom BPE tokenizer, transformer MLM pretraining, ChemBERTa fusion, and six regression heads with automated backend serving.",
-    tech: ["Transformers", "Custom BPE", "ChemBERTa", "FastAPI", "Python"],
-    outcome:
-      "Complete ML lifecycle — data prep to production inference — for automated polymer property prediction."
-  },
-  {
     title: "Production MERN Platforms",
     period: "Jul 2025 – Jan 2026",
     role: "Full Stack Developer",
-    image: "/images/project-mern.png",
+    image: "/images/gogatekul_landing.png",
+    github: "https://github.com/tsamikshagupta/GogteKulMandal",
     problem:
       "Two institutions needed secure platforms for managing complex relational data across roles and generations.",
     approach:
@@ -135,10 +125,25 @@ export const projects: Project[] = [
       "2,000+ active users. 20,000+ records. Secure encrypted deployment on VPS."
   },
   {
+    title: "TransPolymer",
+    period: "Feb – Jun 2025",
+    role: "ML Engineer",
+    image: "/images/project-polymer.png",
+    github: "https://github.com/tsamikshagupta/Transpolymer-PS",
+    problem:
+      "Polymer property prediction was fragmented — tokenization, modeling, and serving lived in separate silos.",
+    approach:
+      "Designed the full pipeline from scratch: custom BPE tokenizer, transformer MLM pretraining, ChemBERTa fusion, and six regression heads with automated backend serving.",
+    tech: ["Transformers", "Custom BPE", "ChemBERTa", "FastAPI", "Python"],
+    outcome:
+      "Complete ML lifecycle — data prep to production inference — for automated polymer property prediction."
+  },
+  {
     title: "Inventory Management System",
     period: "",
     role: "Developer",
     image: "",
+    github: "https://github.com/tsamikshagupta/inventory_management",
     problem:
       "Developed a web-based inventory management system for efficient tracking and management of resources in a college environment.",
     approach:
@@ -146,6 +151,34 @@ export const projects: Project[] = [
     tech: ["Python", "SQLite", "HTML", "CSS", "JavaScript"],
     outcome:
       "Enabled real-time inventory updates and user-friendly interface."
+  },
+  {
+    title: "RAG Doc QA with Memory",
+    period: "2026",
+    role: "AI Engineer & Full Stack Developer",
+    image: "",
+    github: "https://github.com/tsamikshagupta/rag-doc-qa-memory",
+    problem:
+      "Traditional document search systems are inefficient and static, requiring manual scanning of large files. Standard LLMs also lack access to private documents and cannot retain user context across sessions.",
+    approach:
+      "Designed a full RAG pipeline with multi-modal ingestion (PDF, Whisper), text chunking, and embedding generation using Sentence Transformers. Semantic retrieval using FAISS, context-aware generation using FLAN-T5, integrated memory layer, and full-stack deployment via FastAPI and React.",
+    tech: ["Python", "FastAPI", "React", "RAG", "FAISS", "FLAN-T5", "Whisper", "Docker", "NLP", "LLMs"],
+    outcome:
+      "Developed a memory-augmented RAG system that transforms static document search into an intelligent, context-aware assistant capable of multi-modal understanding and personalized QA."
+  },
+  {
+    title: "Algotron",
+    period: "2026",
+    role: "Full Stack Developer",
+    image: "",
+    github: "https://github.com/tsamikshagupta/Algotron",
+    problem:
+      "Learners struggle with Data Structures & Algorithms due to scattered resources, lack of structured practice, and minimal guidance on efficient problem-solving techniques.",
+    approach:
+      "Developed a scalable web-based system with modular architecture. Implemented categorized problem sets (Arrays, Strings, Dynamic Programming, Graphs), and incorporated efficient solution patterns such as Greedy, Sliding Window, and DP. Designed a clean and intuitive interface with reusable components for maintainability and scalability.",
+    tech: ["Java", "React", "JavaScript", "System Design", "Algorithms"],
+    outcome:
+      "Developed a structured DSA platform that streamlines problem-solving workflows, enhances algorithmic thinking, and delivers an efficient user experience for interview preparation."
   }
 ];
 

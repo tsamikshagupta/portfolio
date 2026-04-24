@@ -36,14 +36,14 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
       style={{ rotateX: smoothRotateX, rotateY: smoothRotateY }}
       className="draggable relative h-[60vh] w-[85vw] max-w-[900px] shrink-0 transform-gpu cursor-grab overflow-hidden rounded-[2rem] bg-foreground/5 shadow-2xl transition-all active:cursor-grabbing md:h-[70vh] md:w-[65vw]"
     >
-      <div className="absolute inset-0 z-0 select-none">
+      <div className="absolute inset-0 z-0 select-none bg-neutral-950">
         <motion.img
           src={project.image}
           alt={project.title}
-          className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+          className="h-full w-full object-cover opacity-40 transition-transform duration-700 hover:scale-105"
           draggable={false}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/95 via-neutral-950/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/95 via-neutral-950/80 to-transparent" />
       </div>
 
       <div className="absolute bottom-0 left-0 z-10 w-full p-8 md:p-12">
@@ -54,6 +54,18 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
           <span className="font-mono text-[0.6rem] uppercase tracking-widest text-white/60">
             {project.period}
           </span>
+          {project.github && (
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noreferrer"
+              className="ml-auto flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4 py-1.5 font-mono text-[0.65rem] uppercase tracking-widest text-white backdrop-blur-md transition-colors hover:bg-white/20 hover:text-white"
+              onClick={(e) => e.stopPropagation()}
+              onPointerDown={(e) => e.stopPropagation()}
+            >
+              GitHub <span className="text-[0.55rem]">↗</span>
+            </a>
+          )}
         </div>
 
         <h3 className="mb-4 font-display text-4xl leading-none text-white md:text-6xl drop-shadow-lg">
