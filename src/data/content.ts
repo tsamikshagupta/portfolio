@@ -195,7 +195,7 @@ export const experienceItems = [
     org: "OSCOWL AI",
     period: "Internship",
     impact:
-      "Built and supported AI-driven workflows with a focus on practical model integration and reliable system behavior."
+      "Build and support AI-driven workflows with a focus on practical model integration and reliable system behavior."
   },
   {
     title: "Event Management Head",
