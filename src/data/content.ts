@@ -191,11 +191,11 @@ export const experienceItems = [
       "Owned architecture, deployment, and usability decisions for production-facing client applications."
   },
   {
-    title: "Machine Learning Intern",
-    org: "Cognifyz Technologies",
-    period: "Sep – Oct 2025",
+    title: "AI Engineer Intern",
+    org: "OSCOWL AI",
+    period: "Internship",
     impact:
-      "Improved model validation through disciplined preprocessing, tuning strategy, and metric-driven evaluation."
+      "Built and supported AI-driven workflows with a focus on practical model integration and reliable system behavior."
   },
   {
     title: "Event Management Head",
@@ -255,7 +255,7 @@ export const philosophyContent = {
 export const closingCta = {
   title: "Let's connect and build something impactful.",
   copy:
-    "I am open to internships, collaborations, and AI-driven projects.\nLocation: Hyderabad, India"
+    "I am open to collaborations, building together and Internships.\nLocation: Hyderabad, India"
 };
 
 export const contactLinks = [
