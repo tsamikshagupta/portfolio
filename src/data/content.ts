@@ -260,7 +260,6 @@ export const closingCta = {
 
 export const contactLinks = [
   { label: "Email", href: "https://mail.google.com/mail/?view=cm&fs=1&to=samikshaterala9@gmail.com" },
-  { label: "Resume", href: "/samiksha_terala_resume.pdf" },
   { label: "GitHub", href: "https://github.com/tsamikshagupta" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/tsamikshagupta/" },
   { label: "Behance", href: "https://www.behance.net/samikshagupta13" }
